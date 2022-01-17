@@ -1,0 +1,37 @@
+@import './common/colors.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+body {
+	background-color: $primary-color;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	margin: 0 40px;
+}
+
+a {
+	text-decoration: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
