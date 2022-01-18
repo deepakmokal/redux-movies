@@ -5,6 +5,9 @@
     text-align: center;
     padding: 1em;
     background-color: $secondary-color;
+    position:fixed;
+    bottom:0;
+    
     h6 {
         color: $font-primary;
     }
