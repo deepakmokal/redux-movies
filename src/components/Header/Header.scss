@@ -19,3 +19,26 @@
     height: 38px;
     width: 38px;
 }
+
+.search-form-area input[type="text"]{
+    padding: 7px;
+    width: 200px;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+}
+
+.search-form-area button{
+    cursor: pointer;
+    background-color: $primary-color;
+    border: none;
+    padding: 8px;
+    border-radius: 0 5px 5px 0;
+    color: $font-secondary;
+}
+
+.search-form-area form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

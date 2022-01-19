@@ -5,22 +5,25 @@ import { APIKey } from '../../common/apis/MovieAPIKey';
 const initialState = {
     movies: {}, 
     shows: {},
-    selectedMovieOrShow: {}
+    selectedMovieOrShow: {},
+   
 };
 
 //Fetching Movies
-export const fetchAsyncMovies = createAsyncThunk('movies/fetchAsyncMovies', async () => {
-    const movieText = 'Marvel'
+export const fetchAsyncMovies = createAsyncThunk('movies/fetchAsyncMovies', 
+async (term) => {
+    
     const response = await MovieAPI
-          .get(`?apiKey=${APIKey}&s=${movieText}&type=movie`)
+          .get(`?apiKey=${APIKey}&s=${term}&type=movie`)
            return response.data
 })
 
 //Fetching Shows
-export const fetchAsyncShows = createAsyncThunk('movies/fetchAsyncShows', async () => {
-    const seriesText = 'Anime'
+export const fetchAsyncShows = createAsyncThunk('movies/fetchAsyncShows', 
+async (term) => {
+    
     const response = await MovieAPI
-          .get(`?apiKey=${APIKey}&s=${seriesText}&type=series`)
+          .get(`?apiKey=${APIKey}&s=${term}&type=series`)
            return response.data
 })
 
@@ -44,6 +47,7 @@ const movieSlice = createSlice({
 extraReducers: {
     [fetchAsyncMovies.pending]: () => {
         console.log('Pending');
+       
     },
     [fetchAsyncMovies.fulfilled]: (state, {payload}) => {
         console.log('Fullfilled');
