@@ -20,7 +20,7 @@ export default function Header() {
                
                <div className='logoArea'>
                <Link to="/">
-                    <h2>Movie App</h2>
+                    <h2>CINEVALLEY</h2>
                </Link>
                    
                </div>
