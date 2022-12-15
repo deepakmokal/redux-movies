@@ -61,7 +61,7 @@ export default function MovieDetails() {
                         <span>{data.Language}</span>
                     </div>
                     <div>
-                        <span>Awars</span>
+                        <span>Awards</span>
                         <span>{data.Awards}</span>
                     </div>
                 </div>
