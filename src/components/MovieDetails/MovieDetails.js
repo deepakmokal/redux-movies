@@ -22,7 +22,9 @@ export default function MovieDetails() {
         <div className='movie-section'>
         {Object.keys(data).length === 0 ? 
         (
-            <div>...Loading</div>
+            <div className='loader-wrapper'>
+                <span className="loader"></span>
+            </div>
         ):(
             <>
             <div className='section-left'>
@@ -69,6 +71,8 @@ export default function MovieDetails() {
             <div className='section-right'>
                 <img src={data.Poster} alt={data.Title} /> 
             </div>
+
+            
         </>
         )}
        
