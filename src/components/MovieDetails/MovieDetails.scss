@@ -98,3 +98,9 @@
     40% { box-shadow: 0 2.5em 0 0 }
   }
       
+
+@media screen and (max-width: 991px) {
+    .movie-section {
+        flex-direction: column-reverse;
+    }   
+}

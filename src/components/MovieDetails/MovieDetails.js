@@ -19,7 +19,7 @@ export default function MovieDetails() {
         
     }, [dispatch, imdbID])
     return (
-        <div className='movie-section'>
+        <div className='movie-section row'>
         {Object.keys(data).length === 0 ? 
         (
             <div className='loader-wrapper'>
@@ -27,8 +27,9 @@ export default function MovieDetails() {
             </div>
         ):(
             <>
+           
             <div className='section-left'>
-                <div className='movie-title'>{data.Title}</div>
+            <div className='movie-title'>{data.Title}</div>
                 <div className='movie-rating'>
                     <span>
                         IMDB Rating <i className='fas fa-star'></i> : {data.imdbRating} 
