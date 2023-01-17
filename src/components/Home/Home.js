@@ -6,8 +6,8 @@ import { fetchAsyncMovies, fetchAsyncShows } from '../../features/movies/movieSl
 export default function Home() {
     
     const dispatch = useDispatch()
-    const movieText = 'Marvel';
-    const seriesText = 'Anime'
+    const movieText = 'Movies';
+    const seriesText = 'Series'
     useEffect(() => {
         dispatch(fetchAsyncMovies(movieText))
         dispatch(fetchAsyncShows(seriesText))
